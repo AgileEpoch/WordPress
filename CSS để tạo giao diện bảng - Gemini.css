@@ -1,0 +1,27 @@
+/* Đảm bảo kiểu cơ bản được áp dụng */
+.custom-comparison-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    margin-bottom: 20px !important;
+}
+
+/* Kiểu cho HÀNG TIÊU ĐỀ (HEADER ROW) */
+.custom-comparison-table thead th {
+    background-color: #f1f1f1 !important; /* Nền xám nhạt */
+    color: #333 !important;
+    font-weight: bold !important;
+    text-align: center !important; /* Căn giữa */
+    padding: 15px 10px !important;
+    border: none !important;
+}
+
+/* Kiểu cho CÁC Ô DỮ LIỆU (CELLS) */
+.custom-comparison-table tbody td {
+    padding: 12px 10px !important;
+    background-color: #f7f7f7 !important; /* Nền xám nhạt */
+    border: none !important; /* Đường viền nhẹ */
+    vertical-align: top !important; /* Căn lề trên */
+}
