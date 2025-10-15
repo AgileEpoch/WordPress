@@ -1,0 +1,12 @@
+function hide_admin_bar_for_non_admins() {
+    // Nếu người dùng KHÔNG CÓ quyền 'manage_options' (nghĩa là KHÔNG phải là Administrator)
+    if ( ! current_user_can( 'manage_options' ) ) {
+        return false; // Trả về false để ẩn thanh Admin Bar
+    }
+    
+    // Nếu người dùng CÓ quyền 'manage_options' (là Administrator)
+    return true; // Trả về true để hiển thị thanh Admin Bar
+}
+
+// Áp dụng bộ lọc 'show_admin_bar'
+add_filter( 'show_admin_bar', 'hide_admin_bar_for_non_admins' );
