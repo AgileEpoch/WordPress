@@ -1,0 +1,23 @@
+blockquote {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #ddd; /* Đường viền nhẹ xung quanh */
+    border-radius: 8px; /* Bo góc mềm mại */
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng mờ */
+}
+
+/* Thêm đường viền đậm ở phía trên */
+blockquote:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #e67e22; /* Màu cam nổi bật */
+    margin-bottom: 15px;
+    border-radius: 8px 8px 0 0; /* Chỉ bo góc trên */
+}
